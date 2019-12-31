@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptStudentListDataset" targetNamespace="http://tempuri.org/rptStudentListDataset.xsd" xmlns:mstns="http://tempuri.org/rptStudentListDataset.xsd" xmlns="http://tempuri.org/rptStudentListDataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LibraryCon" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryCon (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryCon.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwStudentsTableAdapter" GeneratorDataComponentClassName="vwStudentsTableAdapter" Name="vwStudents" UserDataComponentName="vwStudentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryCon (Web.config)" DbObjectName="LibraryManagement.dbo.vwStudents" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Student_Name, Enrollment_No, Department, Student_Semester, Student_Contact, Student_Email FROM dbo.vwStudents</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Student_Name" DataSetColumn="Student_Name" />
+              <Mapping SourceColumn="Enrollment_No" DataSetColumn="Enrollment_No" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="Student_Semester" DataSetColumn="Student_Semester" />
+              <Mapping SourceColumn="Student_Contact" DataSetColumn="Student_Contact" />
+              <Mapping SourceColumn="Student_Email" DataSetColumn="Student_Email" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptStudentListDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="rptStudentListDataset" msprop:Generator_UserDSName="rptStudentListDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwStudents" msprop:Generator_TableClassName="vwStudentsDataTable" msprop:Generator_TableVarName="tablevwStudents" msprop:Generator_TablePropName="vwStudents" msprop:Generator_RowDeletingName="vwStudentsRowDeleting" msprop:Generator_RowChangingName="vwStudentsRowChanging" msprop:Generator_RowEvHandlerName="vwStudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="vwStudentsRowDeleted" msprop:Generator_UserTableName="vwStudents" msprop:Generator_RowChangedName="vwStudentsRowChanged" msprop:Generator_RowEvArgName="vwStudentsRowChangeEvent" msprop:Generator_RowClassName="vwStudentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Student_Name" msprop:Generator_ColumnVarNameInTable="columnStudent_Name" msprop:Generator_ColumnPropNameInRow="Student_Name" msprop:Generator_ColumnPropNameInTable="Student_NameColumn" msprop:Generator_UserColumnName="Student_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Enrollment_No" msprop:Generator_ColumnVarNameInTable="columnEnrollment_No" msprop:Generator_ColumnPropNameInRow="Enrollment_No" msprop:Generator_ColumnPropNameInTable="Enrollment_NoColumn" msprop:Generator_UserColumnName="Enrollment_No" type="xs:int" />
+              <xs:element name="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_UserColumnName="Department">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Student_Semester" msprop:Generator_ColumnVarNameInTable="columnStudent_Semester" msprop:Generator_ColumnPropNameInRow="Student_Semester" msprop:Generator_ColumnPropNameInTable="Student_SemesterColumn" msprop:Generator_UserColumnName="Student_Semester">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Student_Contact" msprop:Generator_ColumnVarNameInTable="columnStudent_Contact" msprop:Generator_ColumnPropNameInRow="Student_Contact" msprop:Generator_ColumnPropNameInTable="Student_ContactColumn" msprop:Generator_UserColumnName="Student_Contact" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Student_Email" msprop:Generator_ColumnVarNameInTable="columnStudent_Email" msprop:Generator_ColumnPropNameInRow="Student_Email" msprop:Generator_ColumnPropNameInTable="Student_EmailColumn" msprop:Generator_UserColumnName="Student_Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

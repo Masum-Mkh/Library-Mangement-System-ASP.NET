@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode  title="Library"  description="">
+
+    <siteMapNode  title="Book" description="">
+      <siteMapNode url="~/Book/BookList.aspx" title="Update" description="">
+      <!--<siteMapNode url="~/Book/BookList.aspx" title="Delete" description=""></siteMapNode>
+      <siteMapNode url="~/Book/BookList.aspx" title="Report" description=""></siteMapNode>
+      <siteMapNode url="~/Book/BookList.aspx" title="Entry" description=""></siteMapNode>-->
+    </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Student" description="">
+      <!--<siteMapNode url="" title="Book" description="">
+        <siteMapNode url="~/Student/BookEdit.aspx.cs" title="Update" description=""></siteMapNode>
+        <siteMapNode url="~/Student/BookDelete.aspx.cs" title="Delete" description=""></siteMapNode>
+        <siteMapNode url="~/Student/AllBookReport.aspx.cs" title="Report" description=""></siteMapNode>
+        <siteMapNode url="~/Student/BookEntry.aspx.cs" title="Entry" description=""></siteMapNode>-->
+      <!--</siteMapNode>-->
+    </siteMapNode>
+    <siteMapNode url="~/About.aspx" title="About"  description="" />
+    <siteMapNode url="~/Default.aspx" title="Default"  description="" />
+    <siteMapNode url="~/Contact.aspx" title="Contact"  description="" />
+  </siteMapNode>
+</siteMap>
